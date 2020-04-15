@@ -18,16 +18,13 @@ export default function Search(props) {
     )
 }
 Search.propTypes = {
-    // toggle: PropTypes.bool,
     onChange: PropTypes.func,
     searchTerm: PropTypes.arrayOf(
         PropTypes.shape({
             author: PropTypes.string.isRequired,
             subject: PropTypes.string.isRequired,
             article: PropTypes.string.isRequired,
-            _id: PropTypes.string.isRequired,
             title: PropTypes.string.isRequired
-
         })
     )
 }
